@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - Web Assignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 id="mainheader">Delicious Baking Recipes</h1>
+        <p>Discover the joy of homemade baking!</p>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+        <label for="menu-toggle" class="toggle-label">&#9776;</label>
+        <nav class="nav-menu">
+            <a href="#cakes">Cakes</a>
+            <a href="#cookies">Cookies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Featured Recipes</h2>
+        <div class="recipe1">
+            <h3 id="chocheader">Classic Chocolate Cake</h3>
+            <div class="recipe-content">
+                <ul>
+                    <li>A rich and moist chocolate cake, perfect for any occasion.</li>
+                    <li><strong>Ingredients: </strong>Flour, Cocoa Powder, Sugar, Eggs, Butter, Baking Powder</li>
+                    <li><strong>Steps:</strong> Mix, bake at 350°F (175°C) for 30 minutes, and enjoy!</li>
+                </ul>
+                <img src="https://images.pexels.com/photos/11076350/pexels-photo-11076350.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Classic Chocolate Cake" width="300">
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="changeText()" class="btn1">Change Header</button>
+        </div>
+        <div class="recipe1">
+            <h3 id="cookheader">Chewy Chocolate Chip Cookies</h3>
+            <div class="recipe-content">
+                <ul>
+                    <li>Soft and chewy cookies with gooey chocolate chips.</li>
+                    <li><strong>Ingredients:</strong> Flour, Sugar, Butter, Eggs, Chocolate Chips, Vanilla Extract</li>
+                    <li><strong>Steps:</strong> Mix, shape into balls, bake at 375°F (190°C) for 10-12 minutes.</li>
+                </ul>
+                <img src="https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg" alt="Chewy Chocolate Chip Cookies" width="300">
+             </div>               
+        </div>
+        <div class="button-container">
+            <button onclick="newText()" class="btn1">Change Header</button>
+        </div>
+        
+        <!-- Cakes Section -->
+        <section id="cakes">
+            <h2>Cakes</h2>
+            <p>Explore our collection of delicious cake recipes, from classic chocolate to fruity delights.</p>
+            <div class="recipes-container">
+                <div class="recipe">
+                    <h3>Red Velvet Cake</h3>
+                    <img src="https://images.pexels.com/photos/20171164/pexels-photo-20171164/free-photo-of-strawberry-cakes-on-tray.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Red Velvet Cake" width="300">
+                    <p><strong>Ingredients:</strong> 2½ cups flour, 2 tbsp cocoa powder, 1 tsp baking soda, ½ tsp salt, 1½ cups sugar, 1 cup oil, 2 eggs, 
+                        1 cup buttermilk, 2 tsp vanilla, 1 tsp vinegar, red food coloring.</p>
+                    <p id="steps"><strong>Steps:</strong> Mix flour, cocoa, baking soda, and salt. In another bowl, mix sugar, oil, eggs, buttermilk, vanilla, and red color. 
+                        Combine both bowls, then stir in vinegar. Pour into pans. Bake at 350°F (175°C) for 30 minutes. Cool and frost with cream cheese frosting.
+                    </p>        
+                    <div class="button-container">
+                        <button onclick="toggleInfo(this)" class="btn1">Read More</button>
+                    </div> 
+                </div>
+
+                <div class="recipe">
+                    <h3>Vanilla Sponge Cake</h3>
+                    <img src="https://images.pexels.com/photos/8478047/pexels-photo-8478047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Vanilla Sponge Cake" width="300">
+                    <p><strong>Ingredients: </strong>2½ cups flour, 2½ tsp baking powder, ½ tsp salt, 1 cup butter, 1¾ cups sugar, 4 eggs, 1 tbsp vanilla, 1 cup milk.</p>
+                    <p id="steps"><strong>Steps: </strong>Preheat oven to 350°F (175°C). Cream butter and sugar, add eggs one at a time, then mix in flour, baking powder, and salt. Add milk and vanilla. 
+                        Pour into greased pans. Bake for 25-30 minutes.</p>
+                    <div class="button-container">
+                        <button onclick="toggleInfo(this)" class="btn1">Read More</button>
+                    </div>                          
+                </div>
+
+                <div class="recipe">
+                    <h3>Lemon Drizzle Cake</h3>
+                    <img src="https://images.pexels.com/photos/8478065/pexels-photo-8478065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lemon Drizzle Cake" width="300">
+                    <p><strong>Ingredients:</strong>  1 cup of softened unsalted butter, 1 cup of sugar, 4 eggs, 2 cups of self-raising flour, the zest of 2 lemons, and the juice of 1 lemon.</p>
+                    <p id="steps"><strong>Steps:</strong> Preheat the oven to 350°F (175°C). Cream butter and sugar, add eggs one at a time, then mix in flour, lemon zest, and juice. Pour into a greased loaf pan. Bake for 50-60 minutes. Drizzle with lemon glaze.</p>
+                    <div class="button-container">
+                        <button onclick="toggleInfo(this)" class="btn1">Read More</button>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Cookies Section -->
+        <section id="cookies">
+            <h2>Cookies</h2>
+            <p>Discover the best cookie recipes, perfect for any occasion or just a sweet treat.</p>
+            <div class="recipes-container">
+                <div class="recipe">
+                    <h3>Oatmeal Raisin Cookies</h3>
+                    <img src="https://images.pexels.com/photos/10243944/pexels-photo-10243944.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Oatmeal Raisin Cookies" width="300">
+                    <p><strong>Ingredients:</strong> 1 cup of unsalted butter (softened), 1 cup of brown sugar, 2 eggs, 1 ½ cups of rolled oats, 1 cup of flour, ½ tsp baking soda, 
+                        1 tsp cinnamon, 1 cup of raisins, and a pinch of salt.</p>
+                    <p id="steps"><strong>Steps:</strong> Preheat the oven to 350°F (175°C). Cream butter and sugar, add eggs, then mix in oats, flour, baking soda, cinnamon, and salt. Stir in raisins.
+                        Drop spoonfuls onto a baking sheet. Bake for 10-12 minutes.</p>
+                     <div class="button-container">
+                        <button onclick="toggleInfo(this)" class="btn1">Read More</button>
+                    </div>                
+                    </div>
+
+                <div class="recipe">
+                    <h3>Peanut Butter Cookies</h3>
+                    <img src="https://images.pexels.com/photos/5848204/pexels-photo-5848204.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Peanut Butter Cookies" width="300">
+                    <p><strong>Ingredients:</strong> 1 cup of peanut butter, 1 cup of sugar, 1 egg, 1 tsp vanilla extract, and ½ tsp baking soda.</p>
+                    <p id="steps"><strong>Steps:</strong> Preheat the oven to 350°F (175°C). Mix peanut butter, sugar, egg, vanilla, and baking soda. Roll into balls and flatten with a fork. Bake for 10-12 minutes.</p>
+                    <div class="button-container">
+                        <button onclick="toggleInfo(this)" class="btn1">Read More</button>
+                    </div> 
+                </div>
+
+                <div class="recipe">
+                    <h3>Snickerdoodles</h3>
+                    <img src="https://media.istockphoto.com/id/170619039/photo/snickerdoodles.jpg?b=1&s=612x612&w=0&k=20&c=Ljp3wdZ16Vh_8244sg_HPEyVffyx6OWZFoPwG0CTIow=" alt="Snickerdoodles" width="300">
+                    <p><strong>Ingredients</strong> 1 cup of butter (softened), 1 ½ cups of sugar, 2 eggs, 2 ¾ cups of flour, 2 tsp cream of tartar, 1 tsp baking soda, and a pinch of salt. 
+                        For the coating, mix 3 tbsp sugar and 2 tsp cinnamon.</p>
+                    <p id="steps"><strong>Steps:</strong> Preheat the oven to 350°F (175°C). Cream butter and sugar, add eggs, then mix in flour, cream of tartar, baking soda, and salt. Roll into balls, 
+                        coat in cinnamon-sugar, and place on a baking sheet. Bake for 8-10 minutes.</p>
+                    <div class="button-container">
+                        <button onclick="toggleInfo(this)" class="btn1">Read More</button>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Have questions or feedback? Reach out to us at:</p>
+            <div class="contact-content">
+                <ul>
+                    <li>Email: shalatemshweni1@gmail.com</li>
+                    <li>Phone: 07x xxx xxxx</li>
+                </ul>
+                <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg" alt="Contact" width="300">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 SA Mtshweni - All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
